@@ -57,6 +57,9 @@ iframe{
     height: 40px;
     margin-left: 6px;
 }
+.sns a:first-child{
+	margin-left: 0px;
+}
 .sns a:hover {
     background-color: #cca7a4;
 }
@@ -316,7 +319,7 @@ iframe{
 	display:none;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 100%;
     height: 100%;
     background-color: #93278f;
 	transition: all 0.8s;
@@ -388,7 +391,7 @@ iframe{
 }
 
 /*.con-wrap{
-	margin-top:95px;
+	padding-top:103px;
 }*/
 
 .slide-wrap {
@@ -548,9 +551,6 @@ iframe{
     width: 40px;
     height: 40px;
     margin-left: 6px;
-}
-.footer .sns a:first-child{
-	margin-left:0;
 }
 .footer .sns a:hover {
     background-color: #cca7a4;
