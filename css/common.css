@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/*css reset*/
 *{box-sizing:border-box;}
 html,
 body,
@@ -44,6 +46,27 @@ img{
 iframe{
     border-width: 0px;
 }
+
+/*common css*/
+.sns a {
+	display:inline-block;
+	text-align:center;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+}
+.sns a:hover {
+    background-color: #cca7a4;
+}
+.sns a i {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
 .wrap {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -293,9 +316,9 @@ iframe{
 	display:none;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
-    background-color: gray;
+    background-color: #93278f;
 	transition: all 0.8s;
 }
 #m-gnb{
@@ -307,6 +330,10 @@ iframe{
 	line-height:2em;
 	overflow:hidden;
 }
+#m-gnb > li:hover,
+#m-gnb > li:active{
+	background-color:#ed1e79;
+}
 #m-gnb li a{
 	display:block;
 	padding:0 1em;
@@ -314,23 +341,32 @@ iframe{
 #m-gnb li > a{
 	color:white;
 }
-#m-gnb li a.on,
-#m-gnb > li:hover > a{
-	background-color:black;
-	color:white;
-}
 #m-gnb li .m-submenu{
 	display:none;
-	background-color: dimgray;
+	/*background-color: dimgray;*/
 	transition:all 0.5s;
 }
 #m-gnb li .m-submenu.open{
-	display:block; !important
+	display:block !important;
 } /*선택자(click 등)가 없을때 .m-submenu에 중복이니까 !important를 꼭 넣어주기*/
+
+#m-gnb .m-submenu li{
+	background-color:#5F456C;
+}
+
+#m-gnb .m-submenu li:hover{
+	background-color:#ed1e79;
+}
+
 #m-gnb li .m-submenu a{
 	display:block;
 	color:white;
 }
+
+.m-menu .sns{
+	margin:1rem;
+}
+
 @media (max-width:767px){
 	#gnb{
 		display:none;
@@ -339,7 +375,7 @@ iframe{
 		display:block;
 	}
 	.header .nav-wrap .m-menu.open{
-		display:block; !important
+		display:block !important;
 	}
 }
 @media (min-width:768px){
@@ -506,6 +542,7 @@ iframe{
 }
 .footer .sns a {
 	display:inline-block;
+	text-align:center;
     background-color: white;
     border-radius: 50%;
     width: 40px;
