@@ -39,6 +39,7 @@ img{
 	max-width: 100%;
 	outline:none;
 	border:none;
+	vertical-align: middle;
 }
 iframe{
     border-width: 0px;
@@ -74,18 +75,19 @@ iframe{
 }
 
 .header h1 {
+	position:absolute;
 	float: left;
-	margin-top:9px;
-	/*padding-top:3px;*/
+    width: 140px;
+	margin:30px 0;
 }
 
 .header h1 a {
-	display: block;
+	display: inline-block;
 }
 
 #gnb {
 	float: right;
-	width: 80%;
+	width: 75%;
 	/*margin-top: 33px;*/
 	position:relative;
 }
@@ -145,7 +147,7 @@ iframe{
 	margin:0 auto;
 }
 #gnb > li:hover > a::after{
-	width:45%;
+	width:7rem;
 }
 #gnb li .submenu {
 	position: absolute;
@@ -455,6 +457,16 @@ iframe{
 	#news-list li{
 		font-size:0.8125em;
 	}
+	#news-list li .post-title{
+		float:left;
+		width:50%;
+	}
+}
+@media (min-width:1024px){
+	#news-list li .post-title{
+		float:left;
+		width:70%;
+	}
 }
 
 .footer{
@@ -462,6 +474,14 @@ iframe{
     padding: 20px 0;
     color: white;
 	text-align:center;
+}
+
+.footer h1{
+	width:4rem;
+	margin:0 auto;
+}
+.footer h1 a{
+	display: inline-block;
 }
 /*.footer .nav-wrap > div{
 	float: left;
@@ -518,7 +538,7 @@ iframe{
 @media (min-width:768px){
 	.footer h1 {
     	float: left;
-		margin: 7px 24px 0 0;
+		margin: 1rem;
 	}
 	.footer .company-wrap {
 		float:left;
@@ -527,7 +547,7 @@ iframe{
 	.footer .sns{
 		position:absolute;
 		z-index:2;
-		width:141px;
+		width:9rem;
 		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
