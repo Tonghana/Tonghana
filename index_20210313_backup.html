@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/tonghana_favicon.ico">
+    <!--바로가기 아이콘-->
+    <link rel="shortcut icon" href="./images/tonghana_shoutico.png">
+    <!--바로가기 아이콘-->
+    <link rel="apple-touch-icon" href="./images/tonghana_shoutico.png">
+    <!--카카오톡 링크 걸면 나오는 이미지(주로 sns연결때 사용함)-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="통하나컴퍼니"><!--제목에 뜰 내용(굵은글씨)-->
+    <meta property="og:url" content="https://web-best.github.io/tonghana/"><!--링크걸릴주소-->
+    <meta property="og:description" content="통하나에 오신것을 환영합니다."><!--제목아래쪽에 한줄 나오는 짧은 소개글-->
+    <meta property="og:image" content="./images/tonghana_kakaotalk_thumbnail.png"><!--썸네일이미지 경로-->
+    
+    <title>통하나컴퍼니</title>
+    
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="nav-wrap">
+            <h1><a href="#none"><img src="./images/tonghana_logo.png" alt="통하나로고"></a></h1>
+            <ul id="gnb">
+                <li>
+                    <a href="#none">COMPANY</a>
+                    <ul class="submenu">
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">ARTIST</a>
+                    <ul class="submenu">
+                        <li><a href="#none">박테리아</a></li>
+                        <li><a href="#none">점잖은 원숭이들</a></li>
+                        <!--<li><a href="#none">숟가락 젓가락</a></li>-->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">NEWS</a>
+                    <div class="angle"></div>
+                    <ul class="submenu">
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">기사</a></li>
+                        <li><a href="#none">갤러리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">MULTIMEDIA</a>
+                </li>
+            </ul>
+            <!--<div id="menu-bg"></div>-->
+            <div id="toggleMenu">
+                <input type="checkbox" id="m-menu-btn">
+                <label for="m-menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+            <div class="m-menu">
+                <ul id="m-gnb">
+                    <li>
+                        <a href="#company">COMPANY</a>
+                        <ul class="m-submenu">
+                            <li><a href="#none">회사소개</a></li>
+                            <li><a href="#none">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#gallery">ARTIST</a>
+                        <ul class="m-submenu">
+                            <li><a href="#none">박테리아</a></li>
+                            <li><a href="#none">점잖은 원숭이들</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#contents">NEWS</a>
+                        <ul class="m-submenu">
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">기사</a></li>
+                            <li><a href="#none">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#address">MULTIMEDIA</a>
+                        <!--<ul class="m-submenu">
+                            <li><a href="#none">소메뉴1</a></li>
+                            <li><a href="#none">소메뉴2</a></li>
+                            <li><a href="#none">소메뉴3</a></li>
+                        </ul>-->
+                    </li>
+                </ul>
+                <div class="sns">
+                    <a href="https://www.facebook.com/t1com" target="_blank" title="통하나컴퍼니 페이스북"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/gentle_monkeys.official/" target="_blank" title="점잖은 원숭이들 인스타그램"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCWbiDc4-GDk7IJ5xR4TgPYw" target="_blank" title="통하나컴퍼니 유튜브"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="con-wrap">
+        <div class="slide-wrap">
+            <ul id="slide">
+                <li><img src="./images/gentle_monkeys_main_slide_1.jpg" alt="이미지슬라이드_1"></li>
+                <li><img src="./images/slide_img_2.jpg" alt="이미지슬라이드_2"></li>
+                <li><img src="./images/slide_img_3.jpg" alt="이미지슬라이드_3"></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <ul id="gnb3">
+                <li class="con1">
+                    <h3>ALBUM</h3>
+                    <ul id="abm-list">
+                        <li><a href="#none"><img src="./images/album_1.jpg" alt="앨범이미지1"></a></li>
+                        <li><a href="#none"><img src="./images/album_2.jpg" alt="앨범이미지2"></a></li>
+                        <li><a href="#none"><img src="./images/album_3.jpg" alt="앨범이미지3"></a></li>
+                        <li><a href="#none"><img src="./images/album_4.jpg" alt="앨범이미지4"></a></li>
+                    </ul>
+                </li>
+                <li class="news">
+                    <h3>NEWS</h3>
+                    <ul id="news-list">
+                        <li><a href="#none"><span class="post-title">통하나컴퍼니 공식 사이트 오픈</span><span class="news-data">2021-02-23</span></a></li>
+                        <li><a href="#none"><span class="post-title">통하나컴퍼니 공식 사이트 오픈</span><span class="news-data">2021-02-23</span></a></li>
+                        <li><a href="#none"><span class="post-title">통하나컴퍼니 공식 사이트 오픈</span><span class="news-data">2021-02-23</span></a></li>
+                        <li><a href="#none"><span class="post-title">통하나컴퍼니 공식 사이트 오픈</span><span class="news-data">2021-02-23</span></a></li>
+                        <li><a href="#none"><span class="post-title">통하나컴퍼니 공식 사이트 오픈</span><span class="news-data">2021-02-23</span></a></li>
+                    </ul>
+                </li>
+                <li class="con4">
+                    <h3>MUSIC VIDEO</h3>
+                    <div class="movie-wrap">
+                        <iframe src="https://www.youtube.com/embed/9L2qXTrvjZ4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-wrap">
+            <h1><a href="#none"><img src="./images/tonghana_footer_logo.png" alt="통하나로고"></a></h1>
+            <div class="company-wrap">
+                <p><span>서울특별시 마포구 성미산로23길 46</span><span>T 070-7764-1113</span></p>
+                <p>ⓒ2021 TONGHANA COMPANY. ALL RIGHT RESERVED.</p>
+            </div>
+            <div class="sns">
+                <a href="https://www.facebook.com/t1com" target="_blank" title="통하나컴퍼니 페이스북"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gentle_monkeys.official/" target="_blank" title="점잖은 원숭이들 인스타그램"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCWbiDc4-GDk7IJ5xR4TgPYw" target="_blank" title="통하나컴퍼니 유튜브"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    
+    <script src="./js/base.js"></script>
+    
+</body>
+
+</html>
