@@ -36,7 +36,15 @@ ul, li {
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
+
+input[type="checkbox"],
+input[type="button"],
+button{
+	cursor: pointer;
+}
+
 img{
 	max-width: 100%;
 	outline:none;
@@ -270,6 +278,7 @@ iframe{
 }
 #m-menu-btn + label{
 	display:block;
+	cursor: pointer;
 }
 #m-menu-btn + label > span{
 	display:block;
@@ -283,6 +292,11 @@ iframe{
 #m-menu-btn + label > span.on{
 	background-color:white; !important
 }
+
+#m-menu-btn:checked + label > span{
+	cursor: pointer;
+}
+
 #m-menu-btn:checked + label > span:last-child{
 	display:none;
 	opacity:0;
@@ -377,6 +391,9 @@ iframe{
 	#toggleMenu{
 		display:block;
 	}
+	.header{
+		height:100px;
+	}
 	.header .nav-wrap .m-menu.open{
 		display:block !important;
 	}
@@ -398,24 +415,25 @@ iframe{
   width: 100%;
   max-width: 100%;
   margin: 30px auto;
-  padding: 40px;
   box-sizing: border-box;
 }
  
 .video-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding-top: 50%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
  
-iframe {
-  z-index: 1;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .slide-wrap {
@@ -508,6 +526,9 @@ iframe {
 		width:100%;
 		padding:0;
 	}
+	#gnb3 .con4 .movie-wrap iframe{
+		height:24rem;
+	}
 	#news-list li{
 		font-size:1em;
 	}
@@ -595,6 +616,14 @@ iframe {
 	.footer .company-wrap {
     	padding: 16px 0;
 	}
+	
+	.footer .company-wrap p span{
+		display: block;
+		padding:0;
+	}
+	.footer .company-wrap p span:first-child{
+		border-right:none;
+	}
 }
 @media (min-width:768px){
 	.footer h1 {
@@ -608,7 +637,7 @@ iframe {
 	.footer .sns{
 		position:absolute;
 		z-index:2;
-		width:9rem;
+		width:10rem;
 		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
