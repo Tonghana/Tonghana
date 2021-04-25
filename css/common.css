@@ -485,7 +485,10 @@ iframe{
     margin-bottom: 15px;
 }
 #gnb3 .con4 .movie-wrap{
-	
+	position: relative;
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
 }
 #gnb3 .con4 .movie-wrap iframe{
 	width:100%;
