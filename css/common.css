@@ -420,8 +420,8 @@ iframe{
  
 .video-container {
     position: relative;
-    padding-bottom: 32.25%;
-    padding-top: 30px;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
     height: 0;
     overflow: hidden;
 }
@@ -433,7 +433,7 @@ iframe{
     top: 0;
     left: 0;
     width: 100%;
-    height: 30rem;
+    height: 100%;
 }
 
 .slide-wrap {
